@@ -742,8 +742,12 @@ public class SmartRefreshLayout extends ViewGroup implements RefreshLayout {
                             mFalsifyEvent = MotionEvent.obtain(time, time, MotionEvent.ACTION_DOWN, mTouchX + dx, mTouchY, 0);
                             super.dispatchTouchEvent(mFalsifyEvent);
                         }
-                        MotionEvent em = MotionEvent.obtain(time, time, MotionEvent.ACTION_MOVE, mTouchX + dx, mTouchY + spinner, 0);
-                        super.dispatchTouchEvent(em);
+                        try {
+                            MotionEvent em = MotionEvent.obtain(time, time, MotionEvent.ACTION_MOVE, mTouchX + dx, mTouchY + spinner, 0);
+                            super.dispatchTouchEvent(em);
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
                         if ((getViceState().isHeader() && spinner < 0) || (getViceState().isFooter() && spinner > 0)) {
                             mLastSpinner = (int) spinner;
                             if (mSpinner != 0) {
