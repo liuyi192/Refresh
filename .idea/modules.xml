@@ -3,11 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Refresh.iml" filepath="$PROJECT_DIR$/Refresh.iml" />
-      <module fileurl="file://E:\Workspace\Android\Refresh\Refresh.iml" filepath="E:\Workspace\Android\Refresh\Refresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/RefreshLibrary/RefreshLibrary.iml" filepath="$PROJECT_DIR$/RefreshLibrary/RefreshLibrary.iml" />
-      <module fileurl="file://E:\Workspace\Android\Refresh\RefreshLibrary\RefreshLibrary.iml" filepath="E:\Workspace\Android\Refresh\RefreshLibrary\RefreshLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\Workspace\Android\Refresh\app\app.iml" filepath="E:\Workspace\Android\Refresh\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -2025,7 +2025,11 @@ public class SmartRefreshLayout extends ViewGroup implements RefreshLayout {
                             if (mState != RefreshState.ReleaseToRefresh) {
                                 setStateReleaseToRefresh();
                             }
-                            overSpinner();
+                            try {
+                                overSpinner();
+                            }catch (Exception e){
+                                e.printStackTrace();
+                            }
                         }
                     });
                     reboundAnimator.start();
